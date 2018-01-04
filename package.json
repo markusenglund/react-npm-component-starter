@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "demo": "webpack-dev-server",
+    "demo:prod": "webpack -p",
+    "lib": "babel src -d lib",
+    "lib:watch": "babel src -w -d lib"
   },
   "keywords": [],
   "author": "",
