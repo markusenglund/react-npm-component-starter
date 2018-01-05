@@ -1,6 +1,6 @@
 {
   "name": "react-component-example-project",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
   "main": "lib/index.js",
   "scripts": {
