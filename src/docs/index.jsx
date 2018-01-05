@@ -6,7 +6,7 @@ import "./styles.css";
 function Demo() {
   return (
     <div>
-      <h1>Hello world</h1>
+      <h1>Demo with examples of the component</h1>
       <MyComponent color="brown">Wow what a button</MyComponent>
     </div>
   );
