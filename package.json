@@ -1,8 +1,9 @@
 {
   "name": "react-component-example-project",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description":
+    "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "main": "lib/index.js",
   "scripts": {
     "lib": "babel src/lib -w -d lib",
     "dev": "webpack-dev-server",
@@ -11,7 +12,6 @@
     "build": "npm run build-lib && npm run build-docs"
   },
   "keywords": [],
-  "author": "",
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.2.0",
@@ -30,5 +30,6 @@
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
-  }
+  },
+  "author": "Markus Englund <markus.s.englund@gmail.com>"
 }
