@@ -1,20 +1,21 @@
 {
   "name": "react-component-example-project",
   "version": "0.1.3",
-  "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "description":
+    "A minimal boilerplate for building a react component for npm, including a demo page.",
   "main": "lib/index.js",
   "scripts": {
-    "lib": "babel src/lib -w -d lib",
+    "lib:watch": "babel src/lib -w -d lib",
     "dev": "webpack-dev-server",
-    "build-lib": "babel src/lib -d lib",
+    "lib": "babel src/lib -d lib",
     "build-docs": "webpack -p",
-    "build": "npm run build-lib && npm run build-docs"
+    "build": "npm run lib && npm run build-docs"
   },
   "keywords": [],
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "^15.3.0 || ^16.2.0",
+    "react-dom": "^15.3.0 || ^16.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.36",
