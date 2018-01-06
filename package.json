@@ -5,11 +5,10 @@
     "A minimal boilerplate for building a react component for npm, including a demo page.",
   "main": "lib/index.js",
   "scripts": {
-    "lib:watch": "babel src/lib -w -d lib",
-    "dev": "webpack-dev-server",
     "lib": "babel src/lib -d lib",
-    "build-docs": "webpack -p",
-    "build": "npm run lib && npm run build-docs"
+    "lib:watch": "babel src/lib -w -d lib",
+    "docs": "webpack-dev-server",
+    "docs:prod": "webpack -p"
   },
   "keywords": [],
   "license": "MIT",
