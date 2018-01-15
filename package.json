@@ -16,10 +16,10 @@
     "react-dom": "^15.3.0 || ^16.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.36",
-    "@babel/core": "^7.0.0-beta.36",
-    "@babel/preset-env": "^7.0.0-beta.36",
-    "@babel/preset-react": "^7.0.0-beta.36",
+    "@babel/cli": "^7.0.0-beta.37",
+    "@babel/core": "^7.0.0-beta.37",
+    "@babel/preset-env": "^7.0.0-beta.37",
+    "@babel/preset-react": "^7.0.0-beta.37",
     "babel-loader": "^8.0.0-beta.0",
     "css-loader": "^0.28.8",
     "html-webpack-plugin": "^2.30.1",
@@ -27,7 +27,7 @@
     "react-dom": "^16.2.0",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.10.0"
+    "webpack-dev-server": "^2.11.0"
   },
   "author": "Markus Englund <markus.s.englund@gmail.com>",
   "homepage": "https://github.com/yogaboll/react-npm-component-starter",
