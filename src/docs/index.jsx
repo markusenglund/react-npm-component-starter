@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import MyComponent from "../../lib";
 import "./styles.css";
+import "../lib/styles.css";
 
 function Demo() {
   return (

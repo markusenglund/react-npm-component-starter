@@ -1,11 +1,12 @@
 {
   "name": "react-component-example-project",
   "version": "0.1.3",
-  "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "description":
+    "A minimal boilerplate for building a react component for npm, including a demo page.",
   "main": "lib/index.js",
   "scripts": {
-    "lib": "babel src/lib -d lib",
-    "lib:watch": "babel src/lib -w -d lib",
+    "lib": "babel src/lib -d lib --copy-files",
+    "lib:watch": "babel src/lib -w -d lib --copy-files",
     "docs": "webpack-dev-server",
     "docs:prod": "webpack -p"
   },
