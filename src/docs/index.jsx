@@ -1,13 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
-import MyComponent from "../../lib";
+import Meta from '../lib/components/Meta'
 import "./styles.css";
 
 function Demo() {
   return (
     <div>
-      <h1>Demo with examples of the component</h1>
-      <MyComponent color="brown">Wow what a button</MyComponent>
+      <Meta title="vian app">
+        <h1>Demo with examples of the component</h1>
+      </Meta>
     </div>
   );
 }
