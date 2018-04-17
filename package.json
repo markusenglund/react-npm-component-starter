@@ -4,6 +4,8 @@
   "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
   "main": "lib/index.js",
   "scripts": {
+    "start": "concurrently 'npm run lib:watch' 'npm run docs'",
+    "start:prod": "concurrently 'npm run lib:watch' 'npm run docs:prod'",
     "lib": "babel src/lib -d lib",
     "lib:watch": "babel src/lib -w -d lib",
     "docs": "webpack-dev-server",
@@ -13,19 +15,25 @@
   "license": "MIT",
   "peerDependencies": {
     "react": "^15.3.0 || ^16.2.0",
-    "react-dom": "^15.3.0 || ^16.2.0"
+    "react-dom": "^15.3.0 || ^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.37",
-    "@babel/core": "^7.0.0-beta.37",
-    "@babel/preset-env": "^7.0.0-beta.37",
-    "@babel/preset-react": "^7.0.0-beta.37",
+    "@babel/cli": "^7.0.0-beta.41",
+    "@babel/core": "^7.0.0-beta.41",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.41",
+    "@babel/preset-react": "^7.0.0-beta.41",
     "babel-loader": "^8.0.0-beta.0",
-    "css-loader": "^0.28.8",
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.11",
     "html-webpack-plugin": "^2.30.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "style-loader": "^0.19.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.2.0",
+    "style-loader": "^0.20.3",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.0"
   },
@@ -34,5 +42,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:yogaboll/react-npm-component-starter.git"
-  }
+  },
+  "dependencies": {}
 }
