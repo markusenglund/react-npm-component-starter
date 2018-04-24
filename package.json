@@ -1,8 +1,7 @@
 {
   "name": "react-component-example-project",
-  "version": "0.1.3",
-  "description":
-    "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "version": "0.1.0",
+  "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
   "main": "lib/index.js",
   "scripts": {
     "dev": "concurrently 'npm run lib:watch' 'npm run docs'",
@@ -20,6 +19,8 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.46",
     "@babel/core": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
     "@babel/preset-react": "^7.0.0-beta.46",
     "@babel/preset-stage-2": "^7.0.0-beta.46",
