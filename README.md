@@ -24,8 +24,7 @@ Follow these steps to get started developing your own react component:
 
 * `git clone https://github.com/yogaboll/react-npm-component-starter.git`
 * `npm install`
-* `npm run lib:watch` - Transpile the `src/lib` folder in watch mode
-* `npm run docs` - start a development server with the demo website based on the `src/docs` folder.
+* `npm run dev` to transpile both the lib and docs folder in watch mode and serve the docs page for you.
 * Go to http://127.0.0.1:8000 to see the demo in action. Whenever you change the code in either src/lib or src/docs, the page will automatically update.
 
 Remember to reset the git history:
@@ -37,7 +36,7 @@ Remember to reset the git history:
 
 When you have completed development and want to publish to npm:
 
-* Make sure the "name" field in the package.json file is correct (the npm package will get this name).
+* Change the "name" field in the package.json file (the npm package will get this name), as well "description", "author" and any other fields that need to change.
 * `npm publish`
 * Go to npmjs.com/package/[YOUR COMPONENT NAME]/ to confirm that it has been published.
 
@@ -47,3 +46,19 @@ Host demo on GitHub Pages:
 * Commit your changes to git and push to your GitHub repository.
 * On your GitHub repo page, click the **settings** tab and scroll down to the **GitHub Pages** heading. Pick `master branch /docs folder` in the **source** dropdown, And BOOM, your demo page is already live on the internet for free.
 * Note: Sometimes it might take about an hour for the page to actually start hosting. Adding /index.html after the url works instantly for whatever reason.
+
+## What about CSS?
+
+### Inline styles
+
+The easiest option is to use the style attribute. Like this for example:
+
+`<button style={{background: "blue", width: 20 }} >test</button>`
+
+This is a clean approach since the user of your package doesn't have to separately import a css file. The downside is that you can't use a bunch of css features: pseudo-selectors like `:focus` and `:hover`, media-queries and some prefixed css-properties, which can be a deal breaker.
+
+### Separate CSS file
+
+Your other option is to create a css file inside the `src/lib` folder. It will be automatically copied to the generated `lib` folder. Then you have to ask your users to import it into their app with something like `import "../node_modules/[NAME_OF_YOUR_LIBRARY]/lib/styles.css";` or to manually copy it. Your css class names might be global for the developers entire app so make the class names are unique.
+
+Keep in mind that it is a bad idea to import the css directly into your component file. This requires the webpack style-loader to work, so any user of your package that does not use this loader will be screwed.
