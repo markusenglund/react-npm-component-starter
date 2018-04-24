@@ -1,7 +1,18 @@
 import React, { Component } from "react";
 
-const MySuperCoolComponent = ({ children, color }) => (
-  <button style={{ color }}>{children}</button>
-);
+class MySuperCoolComponent extends Component {
+  handleClick = () => {
+    console.log("Click!");
+  };
+
+  render() {
+    const { color, children } = this.props;
+    return (
+      <button onClick={this.handleClick} style={{ color }}>
+        {children}
+      </button>
+    );
+  }
+}
 
 export default MySuperCoolComponent;
