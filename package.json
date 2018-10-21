@@ -1,8 +1,7 @@
 {
   "name": "react-component-example-project",
   "version": "0.1.0",
-  "description":
-    "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
   "main": "lib/index.js",
   "scripts": {
     "dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
@@ -25,14 +24,14 @@
     "@babel/preset-env": "^7.0.0-beta.46",
     "@babel/preset-react": "^7.0.0-beta.46",
     "babel-loader": "^8.0.0-beta.0",
-    "concurrently": "^3.5.1",
-    "css-loader": "^0.28.11",
+    "concurrently": "^4.0.1",
+    "css-loader": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "style-loader": "^0.21.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.6.0",
-    "webpack-cli": "^2.0.15",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.3"
   },
   "author": "Markus Englund <markus.s.englund@gmail.com>",
