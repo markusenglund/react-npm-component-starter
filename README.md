@@ -1,3 +1,7 @@
+# Deprecation notice
+
+I no longer maintain this boilerplate and I recommend you use [this one](https://github.com/transitive-bullshit/react-modern-library-boilerplate) instead. It uses Rollup to bundle the library which is better for a variety of reasons as compared to using only babel as was done here. Good luck!
+
 # React component boilerplate
 
 This is a simple boilerplate project for building a react component package for npm. It is suitable for building any type of UI component or library (like for example a dropdown menu or a toggle-switch). The project contains a correctly transpiled folder for the component library (easy to get wrong) as well as a demo page for showcasing it. The demo can easily be uploaded to _GitHub Pages_. This boilerplate project is meant to be minimal and easy to understand. Linting, testing, prettier etc have been purposefully left out. It does not include a UMD build, as those aren't really used anymore.
